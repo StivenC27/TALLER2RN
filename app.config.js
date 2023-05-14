@@ -1,4 +1,6 @@
-{
+import 'dotenv/config'
+
+export default{
   "expo": {
     "name": "Taller2-RN",
     "slug": "Taller2-RN",
@@ -25,6 +27,14 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    extra: {
+      apikey: process.env.API_KEY,
+      authDomain: process.env.AUTH-DOMAIN,
+      projectId: process.env.PROJECT_ID,
+      StorageBucket: process.env.STORAGE_BUCKET,
+      appId: process.env.APP_ID,
+      messagingSenderId: process.env.MESSAGING_SENDER_ID,
     }
   }
 }
